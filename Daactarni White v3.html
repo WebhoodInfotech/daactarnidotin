@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cream: '#F8F8F6',
+                            lightgray: '#E8E8E6',
+                            darkgray: '#2A2A2A',
+                            yellow: '#F4C542',
+                            gold: '#D9A623',
+                            charcoal: '#1A1A1A',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        .glass-light { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(244, 197, 66, 0.2); }
+        .glow-shadow-light { box-shadow: 0 0 30px rgba(244, 197, 66, 0.25); }
+        .yellow-gradient-text { background: linear-gradient(to right, #F4C542, #D9A623); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow-bg-light { background: radial-gradient(circle at center, rgba(244, 197, 66, 0.15) 0%, transparent 70%); }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-darkgray font-sans selection:bg-brand-yellow selection:text-white">
+
+    <nav id="header" class="fixed w-full z-50 top-0 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass-light rounded-full px-8 py-3 shadow-lg">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-yellow rounded-lg flex items-center justify-center">
+                    <i class="fa-solid fa-bolt text-white text-xl"></i>
+                </div>
+                <span class="font-display font-bold text-2xl tracking-tighter text-brand-charcoal">DAACTARNI</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-brand-yellow transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-yellow transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-yellow transition-colors">Services</a>
+                <a href="#how-it-works" class="hover:text-brand-yellow transition-colors">How it Works</a>
+                <a href="#offerings" class="hover:text-brand-yellow transition-colors">Offerings</a>
+            </div>
+            <button class="bg-brand-yellow text-white font-bold px-6 py-2.5 rounded-full text-sm hover:scale-105 transition-transform glow-shadow-light">
+                Book Consultation
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-[850px] flex items-center pt-24 overflow-hidden bg-gradient-to-br from-brand-cream to-brand-lightgray">
+            <div class="absolute top-0 right-0 w-1/2 h-full glow-bg-light pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div id="hero-content" class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 glass-light rounded-full border border-brand-yellow/30 shadow-md">
+                        <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                        <span class="text-xs font-semibold tracking-widest uppercase text-brand-gold">Science-Backed Recovery</span>
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-display font-bold leading-tight text-brand-charcoal">
+                        Heal <span class="yellow-gradient-text">Smarter.</span><br>Move Better.
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-lg leading-relaxed">
+                        Experience the next generation of physiotherapy. Premium rehabilitation designed for athletes and high-performers seeking elite recovery.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button class="px-8 py-4 bg-brand-yellow text-white font-bold rounded-2xl hover:bg-brand-gold transition-colors flex items-center gap-3 group shadow-lg">
+                            Start Your Recovery <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <button class="px-8 py-4 glass-light border border-gray-300 rounded-2xl font-bold hover:bg-white/80 transition-colors shadow-md">
+                            View Programs
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-6 pt-8 border-t border-gray-300">
+                        <div class="flex -space-x-4">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" class="w-12 h-12 rounded-full border-2 border-white shadow-md" alt="User">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" class="w-12 h-12 rounded-full border-2 border-white shadow-md" alt="User">
+                            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" class="w-12 h-12 rounded-full border-2 border-white shadow-md" alt="User">
+                        </div>
+                        <div>
+                            <div class="flex text-brand-yellow text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1"><span class="text-brand-charcoal font-bold">500+</span> Elite Athletes Recovered</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="hero-image" class="relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-brand-yellow/20 rounded-full blur-3xl"></div>
+                    <div class="relative rounded-[40px] overflow-hidden border border-gray-200 glow-shadow-light shadow-2xl">
+                        <img class="w-full h-[600px] object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3fbc7105d0-72e1a8b2b2962faa604c.png" alt="professional athlete in luxury physiotherapy clinic receiving high-tech treatment cinematic lighting" />
+                    </div>
+                    <!-- Floating Stats -->
+                    <div class="absolute -bottom-6 -left-6 glass-light p-6 rounded-3xl border border-brand-yellow/30 shadow-xl">
+                        <p class="text-brand-yellow text-3xl font-bold">98%</p>
+                        <p class="text-xs text-gray-600 uppercase tracking-wider font-semibold">Success Rate</p>
+                    </div>
+                    <div class="absolute top-1/4 -right-8 glass-light p-5 rounded-3xl border border-brand-yellow/30 shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-brand-charcoal">Verified Expert</p>
+                                <p class="text-xs text-gray-600">Dr. Sarah Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-32 relative bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-brand-gold font-display font-bold uppercase tracking-[0.3em] text-sm mb-4">Our Expertise</h2>
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-brand-charcoal">Specialized Recovery Solutions</h3>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white border border-gray-200 p-8 rounded-[32px] hover:border-brand-yellow/60 hover:shadow-xl transition-all group cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-yellow/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-person-running text-2xl text-brand-yellow"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-charcoal">Sports Rehab</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Elite performance restoration for professional and amateur athletes.</p>
+                        <div class="h-1 w-0 group-hover:w-full bg-brand-yellow transition-all duration-500"></div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white border border-gray-200 p-8 rounded-[32px] hover:border-brand-yellow/60 hover:shadow-xl transition-all group cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-yellow/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-child-reaching text-2xl text-brand-yellow"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-charcoal">Posture Correction</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Advanced alignment therapy for modern lifestyle and desk-bound fatigue.</p>
+                        <div class="h-1 w-0 group-hover:w-full bg-brand-yellow transition-all duration-500"></div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white border border-gray-200 p-8 rounded-[32px] hover:border-brand-yellow/60 hover:shadow-xl transition-all group cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-yellow/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-laptop-medical text-2xl text-brand-yellow"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-charcoal">Online Physio</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Global access to top-tier recovery coaching from your home.</p>
+                        <div class="h-1 w-0 group-hover:w-full bg-brand-yellow transition-all duration-500"></div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white border border-gray-200 p-8 rounded-[32px] hover:border-brand-yellow/60 hover:shadow-xl transition-all group cursor-pointer">
+                        <div class="w-14 h-14 bg-brand-yellow/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bone text-2xl text-brand-yellow"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-brand-charcoal">Pain Management</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Science-backed protocols for chronic and acute pain relief.</p>
+                        <div class="h-1 w-0 group-hover:w-full bg-brand-yellow transition-all duration-500"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-32 bg-brand-lightgray">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="text-brand-gold font-display font-bold uppercase tracking-[0.3em] text-sm mb-4">The Process</h2>
+                        <h3 class="text-4xl md:text-5xl font-display font-bold leading-tight text-brand-charcoal">Your Journey to Peak Mobility</h3>
+                    </div>
+                    <button class="text-brand-yellow font-bold border-b-2 border-brand-yellow pb-2 hover:text-brand-gold hover:border-brand-gold transition-all">Learn Our Methodology</button>
+                </div>
+                <div class="grid md:grid-cols-4 gap-12 relative">
+                    <!-- Step 1 -->
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 rounded-full bg-brand-yellow text-white flex items-center justify-center text-2xl font-bold mb-8 glow-shadow-light">01</div>
+                        <h4 class="text-xl font-bold mb-4">Consultation</h4>
+                        <p class="text-gray-600 text-sm">A deep dive into your medical history and physical goals.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 rounded-full glass-light border border-brand-yellow/30 text-brand-yellow flex items-center justify-center text-2xl font-bold mb-8">02</div>
+                        <h4 class="text-xl font-bold mb-4">Assessment</h4>
+                        <p class="text-gray-600 text-sm">High-tech movement analysis and diagnostic testing.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 rounded-full glass-light border border-brand-yellow/30 text-brand-yellow flex items-center justify-center text-2xl font-bold mb-8">03</div>
+                        <h4 class="text-xl font-bold mb-4">Custom Plan</h4>
+                        <p class="text-gray-600 text-sm">Personalized rehabilitation roadmap tailored to you.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 rounded-full glass-light border border-brand-yellow/30 text-brand-yellow flex items-center justify-center text-2xl font-bold mb-8">04</div>
+                        <h4 class="text-xl font-bold mb-4">Recovery</h4>
+                        <p class="text-gray-600 text-sm">Active coaching and progress tracking until full health.</p>
+                    </div>
+                    <!-- Connector Line (Desktop) -->
+                    <div class="hidden md:block absolute top-8 left-0 w-full h-[2px] bg-gradient-to-r from-brand-yellow/50 via-brand-yellow/10 to-transparent -z-0"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offerings Section -->
+        <section id="offerings" class="py-32">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-brand-gold font-display font-bold uppercase tracking-[0.3em] text-sm mb-4">Our Programs</h2>
+                    <h3 class="text-4xl md:text-5xl font-display font-bold text-brand-charcoal">Premium Recovery Packages</h3>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Plan 1 -->
+                    <div class="glass-light p-10 rounded-[40px] border border-gray-200 flex flex-col hover:scale-105 transition-transform duration-500">
+                        <h4 class="text-2xl font-bold mb-2">Online Consultation</h4>
+                        <p class="text-gray-600 text-sm mb-8">Expert advice from anywhere in the world.</p>
+                        <div class="text-4xl font-bold mb-8">$99 <span class="text-lg text-gray-500 font-normal">/ session</span></div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> 45-min Video Call</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Digital Exercise Manual</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Email Support</li>
+                        </ul>
+                        <button class="w-full py-4 glass-light border border-gray-300 rounded-2xl font-bold hover:bg-brand-yellow hover:text-white transition-all">Get Started</button>
+                    </div>
+                    <!-- Plan 2 (Popular) -->
+                    <div class="glass-light p-10 rounded-[40px] border-2 border-brand-yellow relative flex flex-col scale-105 glow-shadow-light">
+                        <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-brand-yellow text-white px-6 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">Most Popular</div>
+                        <h4 class="text-2xl font-bold mb-2">Complete Rehab</h4>
+                        <p class="text-gray-600 text-sm mb-8">Comprehensive care for full recovery.</p>
+                        <div class="text-4xl font-bold mb-8">$499 <span class="text-lg text-gray-500 font-normal">/ month</span></div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> 8 Personal Sessions</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Custom Mobility App</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> 24/7 Priority Chat</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Progress Reports</li>
+                        </ul>
+                        <button class="w-full py-4 bg-brand-yellow text-white rounded-2xl font-bold hover:bg-brand-gold transition-all">Select Program</button>
+                    </div>
+                    <!-- Plan 3 -->
+                    <div class="glass-light p-10 rounded-[40px] border border-gray-200 flex flex-col hover:scale-105 transition-transform duration-500">
+                        <h4 class="text-2xl font-bold mb-2">Sports Recovery</h4>
+                        <p class="text-gray-600 text-sm mb-8">Elite training for athletes.</p>
+                        <div class="text-4xl font-bold mb-8">$799 <span class="text-lg text-gray-500 font-normal">/ month</span></div>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Daily Monitoring</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Biomechanical Analysis</li>
+                            <li class="flex items-center gap-3 text-sm"><i class="fa-solid fa-check text-brand-yellow"></i> Performance Coaching</li>
+                        </ul>
+                        <button class="w-full py-4 glass-light border border-gray-300 rounded-2xl font-bold hover:bg-brand-yellow hover:text-white transition-all">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="py-32 relative overflow-hidden">
+            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-brand-yellow/5 blur-3xl pointer-events-none"></div>
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="glass-light p-12 rounded-[48px] border border-brand-yellow/20 relative z-10">
+                    <div class="text-center mb-12">
+                        <h3 class="text-4xl font-display font-bold mb-4">Book Your Consultation</h3>
+                        <p class="text-gray-600">Take the first step towards a pain-free life today.</p>
+                    </div>
+                    <form class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500 ml-2">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-brand-yellow transition-colors outline-none">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500 ml-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-brand-yellow transition-colors outline-none">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500 ml-2">Select Service</label>
+                            <select class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-brand-yellow transition-colors outline-none appearance-none">
+                                <option>Sports Rehabilitation</option>
+                                <option>Posture Correction</option>
+                                <option>Online Consultation</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500 ml-2">Preferred Date</label>
+                            <input type="date" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-brand-yellow transition-colors outline-none">
+                        </div>
+                        <div class="md:col-span-2 space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500 ml-2">How can we help?</label>
+                            <textarea rows="4" placeholder="Describe your condition..." class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:border-brand-yellow transition-colors outline-none"></textarea>
+                        </div>
+                        <div class="md:col-span-2 pt-4">
+                            <button type="submit" class="w-full py-5 bg-brand-yellow text-white font-bold rounded-2xl hover:bg-brand-gold transition-all text-lg glow-shadow-light">
+                                Book My Consultation
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-brand-charcoal pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-bolt text-brand-black text-sm"></i>
+                        </div>
+                        <span class="font-display font-bold text-xl tracking-tighter">DAACTARNI</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        The gold standard in modern physiotherapy and athletic recovery. Healing the world, one move at a time.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 glass-light rounded-full flex items-center justify-center hover:text-brand-yellow transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 glass-light rounded-full flex items-center justify-center hover:text-brand-yellow transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 glass-light rounded-full flex items-center justify-center hover:text-brand-yellow transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Services</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Sports Rehab</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Back Pain Recovery</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Posture Correction</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Online Physio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Company</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Research</a></li>
+                        <li><a href="#" class="hover:text-brand-yellow transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Newsletter</h5>
+                    <p class="text-sm text-gray-400 mb-6">Subscribe for recovery tips and science-backed health insights.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none focus:border-brand-yellow flex-grow">
+                        <button class="bg-brand-yellow text-brand-black p-2 rounded-xl hover:bg-brand-gold transition-colors"><i class="fa-solid
+                        fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center text-sm text-gray-400">
+                &copy; 2024 DAACTARNI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
