@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script>
+    window.FontAwesomeConfig = {
+      autoReplaceSvg: "nest",
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: "#F8F8F6",
+              lightgray: "#E8E8E6",
+              darkgray: "#2A2A2A",
+              yellow: "#F4C542",
+              gold: "#D9A623",
+              charcoal: "#1A1A1A",
+            },
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .glass-light {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(244, 197, 66, 0.2);
+    }
+
+    .glow-shadow-light {
+      box-shadow: 0 0 30px rgba(244, 197, 66, 0.25);
+    }
+
+    .yellow-gradient-text {
+      background: linear-gradient(to right, #f4c542, #d9a623);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow-bg-light {
+      background: radial-gradient(circle at center,
+          rgba(244, 197, 66, 0.15) 0%,
+          transparent 70%);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-cream text-brand-darkgray font-sans selection:bg-brand-yellow selection:text-white">
+  <nav id="header" class="fixed w-full z-50 top-0 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center glass-light rounded-full px-8 py-3 shadow-lg">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-brand-yellow rounded-lg flex items-center justify-center">
+          <i class="fa-solid fa-bolt text-white text-xl"></i>
+        </div>
+        <span class="font-display font-bold text-2xl tracking-tighter text-brand-charcoal">DAACTARNI</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#" class="hover:text-brand-yellow transition-colors">Home</a>
+        <a href="#about" class="hover:text-brand-yellow transition-colors">About</a>
+        <a href="#services" class="hover:text-brand-yellow transition-colors">Services</a>
+        <a href="#how-it-works" class="hover:text-brand-yellow transition-colors">How it Works</a>
+        <a href="#book-appointment" class="hover:text-brand-yellow transition-colors">Book Appointment</a>
+      </div>
+      <button
+        class="bg-brand-yellow text-white font-bold px-6 py-2.5 rounded-full text-sm hover:scale-105 transition-transform glow-shadow-light">
+        Book Consultation
+      </button>
+    </div>
+  </nav>
+
+  <main>
+  <section
+    class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-brand-cream to-brand-lightgray px-6"
+  >
+    <!-- Background Glow -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-yellow/10 rounded-full blur-3xl"
+    ></div>
+
+    <!-- Main Card -->
+    <div
+      class="relative z-10 max-w-3xl w-full text-center glass-light rounded-[40px] p-10 md:p-16 border border-brand-yellow/20 shadow-2xl"
+    >
+      <!-- Success Icon -->
+      <div class="flex justify-center mb-8">
+        <div
+          class="w-28 h-28 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 flex items-center justify-center glow-shadow-light"
+        >
+          <i class="fa-solid fa-check text-5xl text-brand-yellow"></i>
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h1
+        class="text-4xl md:text-6xl font-display font-bold text-brand-charcoal leading-tight mb-6"
+      >
+        Booking
+        <span class="yellow-gradient-text">Confirmed</span>
+      </h1>
+
+      <!-- Description -->
+      <p
+        class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto"
+      >
+        Thank you for booking your consultation with DAACTARNI.
+        <br /><br />
+        Please check your email for your appointment date, time, and Google Meet
+        joining link.
+      </p>
+
+      <!-- Info Box -->
+      <div
+        class="mt-10 inline-flex flex-col md:flex-row items-center gap-4 px-8 py-5 rounded-3xl bg-brand-yellow/10 border border-brand-yellow/20"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-brand-yellow text-white flex items-center justify-center"
+        >
+          <i class="fa-solid fa-envelope text-lg"></i>
+        </div>
+
+        <div class="text-left">
+          <p class="font-bold text-brand-charcoal">
+            Meeting Details Sent Successfully
+          </p>
+          <p class="text-sm text-gray-600">
+            Check inbox/spam folder if you don’t see the email.
+          </p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-12">
+        <a
+          href="/"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-brand-yellow text-white font-bold rounded-2xl hover:bg-brand-gold transition-all shadow-lg"
+        >
+          Back To Home
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+  
+  <footer id="footer" class="bg-brand-charcoal pt-20 pb-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12 mb-16">
+        <div class="col-span-1 md:col-span-1">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-bolt text-brand-black text-sm"></i>
+            </div>
+            <span class="font-display font-bold text-xl tracking-tighter">DAACTARNI</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-8">
+            The gold standard in modern physiotherapy and athletic recovery.
+            Healing the world, one move at a time.
+          </p>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/daactarni"
+              class="w-10 h-10 glass-light rounded-full flex items-center justify-center hover:text-brand-yellow transition-colors"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ismat.khoja?mibextid=LQQJ4d"
+              class="w-10 h-10 glass-light rounded-full flex items-center justify-center hover:text-brand-yellow transition-colors"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/ismat-khoja-317757151"
+              class="w-10 h-10 glass-light rounded-full flex items-center justify-center hover:text-brand-yellow transition-colors"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5 class="font-bold mb-6">Services</h5>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Sports Rehab</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Back Pain Recovery</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Posture Correction</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Online Physio</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-6">Company</h5>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Our Team</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Research</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-brand-yellow transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-6">Newsletter</h5>
+          <p class="text-sm text-gray-400 mb-6">
+            Subscribe for recovery tips and science-backed health insights.
+          </p>
+          <div class="flex gap-2">
+            <input type="email" placeholder="Your email"
+              class="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none focus:border-brand-yellow flex-grow" />
+            <button class="bg-brand-yellow text-brand-black p-2 rounded-xl hover:bg-brand-gold transition-colors">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+        <div class="mb-4 md:mb-0">
+          &copy; 2024 DAACTARNI. All rights reserved.
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="terms.html" class="hover:text-brand-yellow transition-colors">Terms & Conditions</a>
+          <a href="privacy.html" class="hover:text-brand-yellow transition-colors">Privacy Policy</a>
+          <a href="refund.html" class="hover:text-brand-yellow transition-colors">Refund & Reschedule</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
