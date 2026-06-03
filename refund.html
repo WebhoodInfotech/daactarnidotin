@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: "nest",
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refund & Reschedule Policy - DAACTARNI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                cream: "#F8F8F6",
+                lightgray: "#E8E8E6",
+                darkgray: "#2A2A2A",
+                yellow: "#F4C542",
+                gold: "#D9A623",
+                charcoal: "#1A1A1A",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      .glass-light {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(244, 197, 66, 0.2);
+      }
+      .glow-shadow-light {
+        box-shadow: 0 0 30px rgba(244, 197, 66, 0.25);
+      }
+      .yellow-gradient-text {
+        background: linear-gradient(to right, #f4c542, #d9a623);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glow-bg-light {
+        background: radial-gradient(
+          circle at center,
+          rgba(244, 197, 66, 0.15) 0%,
+          transparent 70%
+        );
+      }
+    </style>
+  </head>
+  <body
+    class="bg-brand-cream text-brand-darkgray font-sans selection:bg-brand-yellow selection:text-white flex flex-col min-h-screen"
+  >
+    <nav id="header" class="fixed w-full z-50 top-0 px-6 py-4">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center glass-light rounded-full px-8 py-3 shadow-lg"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 bg-brand-yellow rounded-lg flex items-center justify-center"
+          >
+            <i class="fa-solid fa-bolt text-white text-xl"></i>
+          </div>
+          <span
+            class="font-display font-bold text-2xl tracking-tighter text-brand-charcoal"
+            >DAACTARNI</span
+          >
+        </a>
+        <div
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600"
+        >
+          <a href="index.html" class="hover:text-brand-yellow transition-colors">Home</a>
+          <a href="index.html#about" class="hover:text-brand-yellow transition-colors"
+            >About</a
+          >
+          <a href="index.html#services" class="hover:text-brand-yellow transition-colors"
+            >Services</a
+          >
+        </div>
+        <button
+          class="bg-brand-yellow text-white font-bold px-6 py-2.5 rounded-full text-sm hover:scale-105 transition-transform glow-shadow-light"
+        >
+          Book Consultation
+        </button>
+      </div>
+    </nav>
+
+    <main class="pt-40 pb-32 px-6 max-w-4xl mx-auto relative flex-grow w-full">
+      <div class="absolute top-0 right-0 w-full h-full glow-bg-light pointer-events-none -z-10"></div>
+      
+      <div class="glass-light p-8 md:p-12 rounded-[40px] shadow-xl border border-brand-yellow/20">
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-brand-charcoal mb-10 text-center">Refund & Reschedule Policy</h1>
+        
+        <div class="space-y-6 text-gray-600 leading-relaxed text-sm md:text-base">
+          
+          <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4 font-display">1. Cancellations</h2>
+          <p>We understand that schedules can change and emergencies happen. However, as our physiotherapists block their time specifically for your recovery session, <strong>no refund is provided for cancellation of the booking</strong> once it has been confirmed and paid for.</p>
+
+          <h2 class="text-2xl font-bold text-brand-charcoal mt-10 mb-4 font-display">2. Rescheduling</h2>
+          <p>While cancellations are non-refundable, your appointment can be rescheduled to a later time. The ability to reschedule depends heavily upon the time you notify us of the cancellation and the subsequent availability of your assigned physiotherapist.</p>
+          <p>To reschedule your session, please contact us as soon as possible before your scheduled appointment time so we can accommodate your request and find a new suitable time slot.</p>
+
+          <h2 class="text-2xl font-bold text-brand-charcoal mt-12 mb-6 font-display">3. Refunds</h2>
+          <p>In the exceptional event that a refund is authorized by DAACTARNI (e.g., due to an error on our end or specific situational exceptions), the processing time for the refund will be between <strong>5-7 working days</strong> for the amount to reflect back in your original payment account.</p>
+
+          <div class="bg-brand-charcoal/5 p-6 rounded-2xl mt-12">
+            <h3 class="font-bold text-brand-charcoal mb-2 font-display">Need Help?</h3>
+            <p>If you have any questions regarding your booking, need to reschedule, or wish to discuss a refund, please contact our support team.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      id="footer"
+      class="bg-brand-charcoal pt-20 pb-10 border-t border-white/5 mt-auto w-full"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <div
+                class="w-8 h-8 bg-brand-yellow rounded-lg flex items-center justify-center"
+              >
+                <i class="fa-solid fa-bolt text-brand-black text-sm"></i>
+              </div>
+              <span class="font-display font-bold text-xl tracking-tighter text-white"
+                >DAACTARNI</span
+              >
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed mb-8">
+              The gold standard in modern physiotherapy and athletic recovery.
+              Healing the world, one move at a time.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="https://www.instagram.com/daactarni"
+                class="w-10 h-10 glass-light border-gray-600 rounded-full flex items-center justify-center hover:text-brand-yellow text-white transition-colors"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/ismat.khoja?mibextid=LQQJ4d"
+                class="w-10 h-10 glass-light border-gray-600 rounded-full flex items-center justify-center hover:text-brand-yellow text-white transition-colors"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ismat-khoja-317757151"
+                class="w-10 h-10 glass-light border-gray-600 rounded-full flex items-center justify-center hover:text-brand-yellow text-white transition-colors"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Services</h5>
+            <ul class="space-y-4 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Sports Rehab</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Back Pain Recovery</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Posture Correction</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Online Physio</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Company</h5>
+            <ul class="space-y-4 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Research</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-yellow transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6 text-white">Newsletter</h5>
+            <p class="text-sm text-gray-400 mb-6">
+              Subscribe for recovery tips and science-backed health insights.
+            </p>
+            <div class="flex gap-2">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none focus:border-brand-yellow flex-grow text-white"
+              />
+              <button
+                class="bg-brand-yellow text-brand-black p-2 rounded-xl hover:bg-brand-gold transition-colors"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4"
+        >
+          <div class="mb-4 md:mb-0">&copy; 2024 DAACTARNI. All rights reserved.</div>
+          <div class="flex flex-wrap justify-center gap-6">
+            <a href="terms.html" class="hover:text-brand-yellow transition-colors">Terms & Conditions</a>
+            <a href="privacy.html" class="hover:text-brand-yellow transition-colors">Privacy Policy</a>
+            <a href="refund.html" class="hover:text-brand-yellow transition-colors">Refund & Reschedule</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
